@@ -1,0 +1,3 @@
+## Schedule states (`schedule-states.png`)
+
+An `ExamSchedule` is always in one of two states, which are the values of `ScheduleStatus`. When `generate()` creates a schedule and `validate(s)` finds no errors, the schedule is `VALID`. A valid schedule stays valid when the user moves an exam by hand and `checkMove(e, t)` finds no broken rules (FR 19, 40). If the data or the exam period changes, `markOutdated()` makes the schedule `OUTDATED` (FR 26), and further changes keep it outdated. The schedule becomes `VALID` again after `update(s)` or `generate()` creates a schedule without errors (FR 42, NFR 8).
