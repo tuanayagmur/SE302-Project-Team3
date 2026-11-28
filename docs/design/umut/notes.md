@@ -1,4 +1,3 @@
-# Umut – design notes
 # Design Notes - Database and Data Import (T4)
 
 ## Database Design (database.drawio / database.png)
